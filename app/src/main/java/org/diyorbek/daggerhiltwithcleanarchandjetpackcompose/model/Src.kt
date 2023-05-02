@@ -1,12 +1,5 @@
 package org.diyorbek.daggerhiltwithcleanarchandjetpackcompose.model
 
-import android.os.Parcelable
-import androidx.room.Entity
-import kotlinx.parcelize.Parcelize
-
-
-@Parcelize
-@Entity
 data class Src(
     val landscape: String,
     val large: String,
@@ -16,4 +9,4 @@ data class Src(
     val portrait: String,
     val small: String,
     val tiny: String
-): Parcelable
+)

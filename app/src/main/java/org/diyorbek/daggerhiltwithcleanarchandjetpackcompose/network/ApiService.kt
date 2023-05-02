@@ -13,7 +13,7 @@ interface ApiService {
     @Headers("Content-type:application/json")
 
     @GET("search?query=nature")
-    suspend fun getAllPhotos(): Response<PhotoDTO>
+    suspend fun getAllPhotos(): Response<List<Photo>>
 
     @GET("photos/{id}")
     suspend fun getOnePhotoById(
